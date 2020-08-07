@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>
+            Sample Form for Question-1
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            .main{
+                background-color: #d0dbdb;
+                width: 720;
+                padding: 20px 20px;
+                margin: auto;
+            }
+            label{
+                text-align: left;
+                font-size: 20px;
+            }
+            input[type=text], input[type=email], input[type=number], select{
+                width: 300px;
+                padding: 12px 20px;
+                margin: 8px 0 2px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                font-size: 15px;
+            }
+            .icon{
+                padding: 13.1px;
+                border: 1px solid #ccc;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            i{
+                background-color: #c5d4d4;
+            }
+            .submit{
+                margin-top: 8px;
+                padding: 5px;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <form onsubmit="onClick()">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <label for="full-name">Full Name</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-user icon" aria-hidden="true"></i><input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address-line-1">Address Line 1</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-address-book-o icon" style="padding-left: 11px;" aria-hidden="true"></i><input type="text" id="address-line-1" name="address-line-1" placeholder="Address Line 1" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address-line-2">Address Line 2</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-address-book-o icon" style="padding-left: 11px;" aria-hidden="true"></i><input type="text" id="address-line-2" name="address-line-2" placeholder="Address Line 2" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-building-o icon" aria-hidden="true"></i><input type="text" id="city" name="city" placeholder="City" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">State/Province/Region</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-map-marker icon" style="padding-left: 14px; padding-right: 13.5px;" aria-hidden="true"></i><input type="text" id="state" name="state" placeholder="State/Province/Region" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pin">Postal Code/Zip</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-envelope-open-o icon" style="padding-left: 10px; padding-right: 12px;" aria-hidden="true"></i><input type="text" id="pin" name="pin" placeholder="Postal Code/Zip" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-map-o icon" style="padding-left: 9px; padding-right: 12px;" aria-hidden="true"></i><select id="country" name="country" required>
+                                    <option value="Afganistan" selected>Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-user icon" aria-hidden="true"></i><input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="number">Number</label>
+                        </td>
+                        <td align="right">
+                            <div class="input-class">
+                                <i class="fa fa-user icon" aria-hidden="true"></i><input type="number" id="number" name="number" placeholder="Number" maxlength="10" minlength="10" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" >
+                            <input type="submit" name="submit" value="Submit" class="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script>
+            function onClick(){
+                alert("Thanks for your time!!")
+            }
+        </script>
+    </body>
+</html>
